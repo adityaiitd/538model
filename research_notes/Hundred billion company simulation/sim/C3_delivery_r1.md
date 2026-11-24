@@ -13,7 +13,7 @@ The product can be delivered, but not at the stated cost, speed or guarantee. Mo
 | Founder figure | Panel figure | Basis |
 |---|---|---|
 | 4.5% of net collections | 2.5-4.0% for a $50M client; 5-8% only for small practices; expect 3.0-3.5% by 2029 | Fee falls with client size [DK]; small-practice quotes 5-8% [source: https://www.carepatron.com/blog/how-much-do-medical-billing-services-cost/] |
-| Cost to serve 40% in year one | 66-71% run-rate for a live client; 80-90% with guarantee reserve and implementation; above 120% of fees recognized in a client's first contract year | Cost stack below |
+| Cost to serve 40% in year one | 60-71% run-rate for a live client; 73-95% with guarantee reserve and implementation; above 120% of fees recognized in a client's first contract year | Cost stack below |
 | Cost to serve 20% at scale | 45-50% at a 4.5% fee; 55-60% if the fee falls to 3.5% | Cost stack below |
 | Go-live in 45 days | 90-150 days on an already-integrated system; 150-240 days for a new system or care setting | Payer enrollment, security review, partner certification [DK] |
 | Six-month guarantee, refund to cover shortfall | 12 months, measured on matured cohorts, capped at 25-50% of period fees | Net collection rate needs 120 days of run-out [DK] |
@@ -34,10 +34,10 @@ Volume assumptions [DK]: about 278,000 claims a year at $180 average payment; in
 | Model inference and voice | $135-270K | 6-12% | $135K | 6% |
 | Practice-management access (licenses, interface fees, marketplace share) | $70-110K | 3-5% | $90K | 4% |
 | Insurance and security certification | $55K | 2.5% | $45K | 2% |
-| Run-rate subtotal | | 66-71% | | 39% |
+| Run-rate subtotal | | 60-71% | | 39% |
 | Guarantee reserve | $225-450K | 10-20% | $70-110K | 3-5% |
 | Implementation, amortized over three years | $70-100K a year | 3-4% | $70K | 3% |
-| Total | | 80-90% | | 45-50% |
+| Total | | 73-95% | | 45-50% |
 
 Patient statements and card fees (about 3% on the 10-20% of collections paid by patients [DK]) are assumed to be passed through. If absorbed, add 5 points.
 
@@ -179,4 +179,4 @@ Peak cumulative cash deficit per $50M client: $1.0-1.5M [DK estimate]. Forty-fiv
 ## Probabilities
 
 - First paid commercial delivery within 18 months, this version: **55%**. A small client on a narrowed scope is achievable; a $50M client live in 45 days with the six-month guarantee is not.
-- $1 billion of annual recognized revenue within 7 years: **2%**. It needs $22-29B of collections under management, which is 40-50% of what the largest hospital outsourcer manages [notes], assembled from sub-hospital clients while the fee falls.
+- $1 billion of annual recognized revenue within 7 years: **2%**. It needs $22-29B of collections under management, which is 40-50% of the $55B+ that one leading hospital outsourcer manages [notes], assembled from sub-hospital clients while the fee falls.
