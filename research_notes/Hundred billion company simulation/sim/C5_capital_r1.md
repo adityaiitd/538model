@@ -140,7 +140,7 @@ Merely larger. Scale buys 3-5 points of purchasing leverage, better allocation a
 - Arithmetic:
   - Capital to $1B revenue: about $600-730M in total, about $450-500M of it equity (table 1.7).
   - Value at $1B revenue: $1.0-2.2B.
-  - Financing path at integrator valuations (1-1.5x forward revenue): seed $5M at $20M post, A $30M at $100M, B $100M at $200M, C $150M at $500M, D $200M at $1.0B, 13% option pool. Founders hold about 11%. With generous rounds (B at $350M, C at $900M, D at $1.6B) about 22%. Founder stake at $1B revenue: 8-22%, worth $100-350M.
+  - Financing path at integrator valuations (1-1.5x forward revenue): seed $5M at $20M post, A $30M at $100M, B $100M at $200M, C $150M at $500M, D $200M at $1.0B, 13% option pool. Founders hold about 13% (0.75 x 0.70 x 0.50 x 0.70 x 0.80 x 0.87). With generous rounds (B at $350M, C at $900M, D at $1.6B) about 24%. Founder stake at $1B revenue: 13-24% before any down round, worth roughly $130-500M. One down round in a pause takes it below 10%.
   - Seed stake after dilution about 4-5% of $1.4B = about $65M on $5M, 13x, at a probability the investor puts at 5%. Expected multiple about 0.65x.
 - Multiples the investor uses: proprietary electrical equipment with service 19-27x EBITDA today and 12-15x through the cycle; modular builders 10-13x; contract assemblers 6-10x EBITDA and 0.3-0.8x revenue [sources above; DK].
 - Precedent: no equipment start-up founded since 2019 was found with $100M+ of reported revenue; funded ones took two to four years to first units [notes].
@@ -231,6 +231,7 @@ Merely larger. Scale buys 3-5 points of purchasing leverage, better allocation a
 | Incumbent switchgear booked through 2028 helps the entrant | It applies to the entrant's own purchases | [notes] |
 | Five-year warranty at no stated cost | 3-4% of revenue | Component warranties of 12-18 months [DK] |
 | Target: a new Vertiv | At 10 GW a year, $13-20B | Section 1.7 |
+| One month saved is worth $500k/MW, so the buyer pays a premium | Delay damages offered cover 6% of that loss; realised saving is 2-6 weeks where the electrical room is not on the critical path | Section 1.4; persona 6 [DK] |
 
 ## 5. Probabilities (panel's estimate)
 
