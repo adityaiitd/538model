@@ -77,3 +77,61 @@ Panel fee path: $0.4M, $5.6M and $15M in years one to three.
 |---|---|
 | F1 v2 | Lead with expert quality control of long agent runs, billed by the hour and ordered weekly. Data sold per corpus only against a first order and only with clean title. Retested by the same two panels. |
 | F6 v1 (new) | Buy medical billing companies at about one times revenue and run them with agents. Enters because the arithmetic of bought revenue only works at that price, and because first-study panels said billing firms sell near it and their clients are sticky. Two fresh panels, one asked to rank other industries for the same play. |
+
+## Round two results
+
+| Candidate | First paid delivery in 9 months | $40M by month 18 | $100M by month 36 | Panels' base case | Outcome |
+|---|---|---|---|---|---|
+| F1 v2 Expert quality control for AI labs | 75-80% | 5-7% | 5-9% | $18M trailing at month 18, $33M in year two, $55M in year three | Redesign once more |
+| F6 v1 Buy medical billing companies | 20-42% | 2-3% | 4-5% | $17.6M trailing at month 18, $59.9M at month 36, on $98M of capital | Rejected |
+
+### F1 v2: expert quality control
+
+| Round-one objection | Status after v2 |
+|---|---|
+| Sellers lack title | Resolved. Regulated client screens dropped. |
+| Fixed cash to owners and inventory risk | Resolved. Corpus bought only against a first order. |
+| No quarterly licence | Partly. Weekly hours match how labs buy. Orders end on 30 days' notice. |
+| Larger suppliers already hold the category | Unresolved and worse. The largest marketplace sells expert agent evaluation with 200,000+ trained authors. |
+| Labs supply themselves | Unresolved. Now as in-house platforms and model judges. |
+
+| New objection | Evidence |
+|---|---|
+| No differentiation a lab pays for | Reviewers work for several vendors. Labs measure agreement in their own tools. |
+| Price squeeze | Lab rate card about $135-150 an hour. Senior practitioners want $110-140. Gross margin 22-30%. |
+| Human review is a sample | One supplier describes a model-judge pass on about 90% with a 20% human spot-check |
+| Reviewer count three times too low | Weekly-active experts average about five hours a week |
+| Buyers want price per accepted review | Two personas |
+
+Orders the buyer panel would place: $1.3-2.9M in year one and $4.1-9.7M in year two. $40M needs one lab to make the company a primary vendor in a domain at $10-20M.
+
+Delivery panel's revenue cases for v2, in $M:
+
+| Case | Probability | Quarter 6 | Trailing at month 18 | Year two | Year three |
+|---|---|---|---|---|---|
+| Low | 35% | 1.5 | 4 | 6 | 8 |
+| Base | 50% | 7.5 | 18 | 33 | 55 |
+| High | 15% | 17 | 45 | 80 | 140 |
+
+What changed for v3: supply from firms whose employed staff review in secured rooms, price per accepted review, and a second buyer group of agent companies and enterprises.
+
+### F6 v1: buy medical billing companies. Rejected.
+
+| Objection | Evidence |
+|---|---|
+| A first purchase takes 7-11 months for a first-time buyer | Panels: 7-10% chance of closing inside six months, 38-45% inside twelve |
+| One times revenue buys only onshore manual firms earning 10-13% | Realistic price 1.05-1.35 times revenue. An offshore-enabled $35M firm asks 2.3 times. AI roll-ups pay 8-11 times EBITDA in cash. |
+| Equity needed is double the brief | $30-41M for $40M of revenue, not $18M |
+| The book shrinks after a sale | One listed buyer lost 22-36% of acquired revenue in year one. Panels expect 12-18%. |
+| Larger clients take the saving | Fee cuts of 13-27% at the sale and when agents are disclosed |
+| Cost to serve falls slowly | 72-84% at month 18, not 60-65%. Records vendors ban agent logins. |
+| No value created | Panel: month-36 equity of $39M against $62M invested |
+
+A panel adviser ranked nine industries for the same play: freight forwarding with customs brokerage first, truck brokerage second, claims and benefits administration third, medical billing fourth. His reason for the first: $0.25-0.50 per dollar of gross revenue, so $40M costs $10-18M. His warning: it "satisfies a revenue target, not a wealth target".
+
+## Round three candidates
+
+| Candidate | Change |
+|---|---|
+| F1 v3 | Firm-employed reviewers in secured rooms, price per accepted review, labs plus agent companies and enterprises. One fresh market panel. |
+| F7 v1 (new) | Buy a freight forwarder with a customs brokerage, automate entry work, sell duty recovery to its own importers. Two fresh panels. |
