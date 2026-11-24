@@ -41,7 +41,7 @@ Consequence. The model v2 copies is the one with the best-verified fast ramp. Th
 | 5 | One buyer pausing halves revenue and the borrowing base together | Unresolved | The brief concedes it. Termination moved from quarterly to 30 days, which makes it worse. |
 | 6 | Labs do not sign quarterly licences | Resolved by design | Weekly hours on purchase orders match how labs buy. Revenue is now terminable at 30 days. |
 | 7 | Price of $250 to $400 an hour | Resolved | v2 adopts $140 to $220. |
-| 8 | Gross margin of 40 to 45% | Partly | v2 claims 30 to 35%. Panel: 24 to 28% in year one, 28 to 33% at steady state (section 2a). |
+| 8 | Gross margin of 40 to 45% | Partly | v2 claims 30 to 35%. Panel: 22 to 26% in year one, 27 to 32% at steady state (section 2a). |
 | 9 | $5 to 10M does not cover the plan | Partly | Cash need falls to $11 to 14M. With a receivables line the equity need is $7 to 9M, inside the founder's range but with no reserve for a pause (section 2c). |
 | 10 | Full security review takes until month 9 to 12 | Partly | Trials can run inside the lab's own tooling, which shortens the first review to 6 to 10 weeks. Standing programs on unreleased models still need SOC 2 Type II [DK]. |
 | 11 | The technical build is copyable in 6 to 9 months | Unresolved | v2 has less technology than v1. Calibration with reported inter-rater agreement is standard practice at the large suppliers [DK]. |
@@ -54,14 +54,16 @@ Consequence. The model v2 copies is the one with the best-verified fast ramp. Th
 
 ### 2a. One billed review hour at $180
 
-| Line | Brief | Panel, year one | Panel, steady state | Basis |
+| Line | Brief | Panel, first two quarters | Panel, steady state | Basis |
 |---|---|---|---|---|
-| Expert pay | 60 to 65% | $115 (64%) | $112 (62%) | Senior reviewers cost more than the $85 to $95 Mercor average [notes] |
-| Calibration overlap: 8 to 12% of hours double-reviewed and not billable | not stated | $12 | $8 | [DK]. The brief's own differentiation creates this cost. |
-| Second-level review and program management | not stated | $9 | $7 | [DK] |
-| Rejected or credited hours | not stated | $10 (10 to 12% early) | $6 | [DK] |
+| Expert pay | 60 to 65% | $115 (64%) | $108 (60%) | Senior reviewers cost more than the $85 to $95 Mercor average [notes] |
+| Calibration overlap: 5 to 12% of hours double-reviewed and not billable | not stated | $12 | $6 | [DK]. The brief's own differentiation creates this cost. |
+| Second-level review and program management | not stated | $9 | $6 | [DK] |
+| Rejected or credited hours | not stated | $10 | $5 | [DK] |
 | Payment fees, fraud checks, identity verification | not stated | $4 | $3 | [DK] |
-| Gross profit | $54 to $63 (30 to 35%) | about $30 to $45 (17 to 25%) in the first two quarters, 24 to 28% for year one | $44 to $58 (25 to 32%) | [calc]. Mercor: 23% implied early, 27% in 2025, 33% in Q2 2026. |
+| Gross profit | $54 to $63 (30 to 35%) | $30 (17%) | $52 (29%), range 27 to 32% | [calc]. Mercor: 23% implied early, 27% in 2025, 33% in Q2 2026. |
+
+Year-one average: 22 to 26% [calc].
 
 ### 2b. Experts needed for $40M
 
@@ -242,7 +244,7 @@ Clock starts January 2027. Review hours at $180. Corpus sales included at one in
 
 | Brief | Panel | Basis |
 |---|---|---|
-| Gross margin 30 to 35% | 24 to 28% in year one, 28 to 33% at steady state | Section 2a |
+| Gross margin 30 to 35% | 22 to 26% in year one, 27 to 32% at steady state | Section 2a |
 | 250 to 350 part-time experts | 750 to 1,000 weekly active, 1,400 to 1,800 vetted | Section 2b |
 | Experts paid in 2 to 4 weeks | 1 week | Mercor pays weekly [source] |
 | Labs pay in 45 to 60 days | 70 to 80 days from work to cash | [DK] |
@@ -277,6 +279,6 @@ Clock starts January 2027. Review hours at $180. Corpus sales included at one in
 | Probability of a first paid commercial delivery within 9 months | 70% | 80% |
 | Probability of $40M gross recognized revenue in a trailing twelve months by month 18 | 5% | 7% |
 | Probability of $100M by month 36 | 7% | 9% |
-| Year five, if it works | $150 to 250M gross, 30 to 35% margin, $300 to 700M | $150 to 300M gross, 28 to 33% margin, $250 to 700M |
+| Year five, if it works | $150 to 250M gross, 30 to 35% margin, $300 to 700M | $150 to 300M gross, 27 to 32% margin, $250 to 700M |
 
 Revenue type: repeat weekly purchase orders, terminable at 30 days. It is neither recurring in the contractual sense nor contracted.
