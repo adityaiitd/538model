@@ -93,3 +93,83 @@ The only route to "yes" was to own a certified DC power component, which needs t
 | C1 v2 | Islanded gas engine blocks with a small battery, 25 MW standard, seven-year terms, weak-credit buyers secured by cash and redeployable assets. Retested by the same three panels. |
 | C6 v1 (new) | Owned libraries of expert work environments licensed to AI labs, plus independent certification. Enters because supplier-to-labs is the fastest verified ramp on small capital. Tries to fix the faults that got it screened out. |
 | C7 v1 (new) | Free AI research assistant for financial advisers, paid for by fund sponsors. Applies the one model in the research that owns its scarce input and makes no long-dated promise: OpenEvidence. |
+
+## Round two: one redesign and two new candidates
+
+| Candidate | Buyers who would sign as offered | P(delivery) | P($1bn) | Outcome |
+|---|---|---|---|---|
+| C1 v2 Islanded gas engine blocks, $38,000 per MW-month | 2 of 8 (neocloud signs, site operations accepts) | 12-17% | 1.5-3% | Redesign once more |
+| C6 v1 Owned expert environments for AI labs | Pilots from 4 of 8, no subscriptions | 60-70% | 0.5-2% | Rejected |
+| C7 v1 Free adviser assistant paid by fund sponsors | Paid tests from 3 of 6 payers, no annual packages | 55% | 0.1-0.5% | Rejected |
+
+### C1 v2: islanded gas engine blocks
+
+| Round-one objection | Status after v2 |
+|---|---|
+| No rule grants earlier energization | Resolved. Islanding removes the utility. Replaced by air permit and gas tap. |
+| Utility holds the breaker | Resolved |
+| Four hours too short | Resolved |
+| Self-supply is cheaper | Partly. Target buyers cannot self-supply engines, but fleet owners can serve them. |
+| Cost understated | Unresolved. Panels put cost at $1.75-2.9M per MW sold against the brief's $1.45M. |
+| Lenders give less than planned | Unresolved. 40-45% at about 11%. |
+
+| New objection | Evidence |
+|---|---|
+| The "open" engine capacity is already sold | HD Hyundai sold 684 MW and 1,000 MW lots to funded US developers in 2026 |
+| Fleet owners with idle capacity take these sites | ProPetro has about 2.1 GW secured and uncontracted and signs 60 and 80 MW deals. Panel says they deliver from stock in 2027 at $42,000-50,000. |
+| The block is not redeployable | Available engines are 9.6-20 MW on foundations. N+2 needs 48 MW installed for 25 MW sold. |
+| Texas paused data-center air permits on 21 September 2026 | Search summary only, not verified |
+| $38,000 is below market and below cost of capital | Panels put the clearing price for weak credit at $45,000-58,000. Return at the clearing price is 8.5-9.8% unlevered. |
+| Nothing compounds | At $1bn of revenue the panel values the company, as opposed to the assets, at $0.4-0.5bn |
+
+What changed for v3: the company starts by buying an operating generator rental fleet, so it has units, crews, a dealer relationship and an operating record on day one. Price raised to the clearing range. Sponsor is a private equity or infrastructure fund, not venture.
+
+### C6 v1: owned expert environments. Rejected.
+
+| Objection | Evidence |
+|---|---|
+| Exclusive is the norm and non-exclusive is the discount product, so owning the library earns less | Epoch and SemiAnalysis on environment pricing. Panel: a task costs about $2,500 to build and sells non-exclusive for $300-900. |
+| Finance is already supplied | OpenAI has paid 100+ former bankers since October 2025. Mercor's benchmark has covered investment banking since January 2026. |
+| Certification has no payer | The Federal Reserve's SR 26-2 keeps validation with the bank. AIUC has raised $55M and holds the reference customers. |
+| Labs are taking the work in-house and reallocate quarterly | About 30% in-house now, per panel |
+| Selling training data disqualifies the same company as certifier | Panel reasoning |
+
+Panel revenue estimate: $2.5M, $12M, $28M and $55M in years one, two, three and five. Value $200-450M. Losing the largest customer halves revenue within 90 days.
+
+### C7 v1: adviser assistant paid by sponsors. Rejected.
+
+| Objection | Evidence |
+|---|---|
+| A frontier lab already shipped it | Anthropic launched Claude for Financial Advisors on 14 September 2026. The panel reports a large custodian embedded it in October. |
+| Payers want named leads and users refuse to be named | Panel reasoning, unverified |
+| Few advisers control the decision | 283,137 US advisers (Cerulli). 54% use manager-built model portfolios (Escalent). About 88,000 are free to choose tools. |
+| Inventory is 2-4% of the physician case | 5-10 queries a month against about 30. Revenue per active adviser $300-900. |
+| No cross-side network effect | Sponsors gain from advisers. Advisers gain nothing from sponsors or each other. |
+
+Panel revenue estimate: $0.2M, $1.8M, $5.8M and $22M in years one, two, three and five.
+
+## Round three: C1 v3, entry by buying a fleet
+
+Tested by the retained capital panel and one fresh market panel.
+
+| Standing objection | Status after v3 |
+|---|---|
+| Utility contract, price too low, default exceeds security, crews | Resolved |
+| Equipment, permits, weak credits, capital | Partly resolved |
+| Nothing proprietary | Unresolved |
+| Cost of $1.8-2.2M per firm MW | Unresolved |
+| 99.9% availability islanded on one gas line | Unresolved |
+
+| New objection | Evidence |
+|---|---|
+| There is no repricing gain | Rental fleets already earn about $240,000 of EBITDA per nameplate MW-year. Compute at $47,500 per firm MW is about $35,600 per nameplate MW-month against about $34,000 in rental, before $0.4-0.6M per MW of conversion. |
+| Entry prices have risen | Panel: multiples went from 4.3 times EBITDA in January 2025 to 7.4 times in February 2026. Kodiak Gas Services bought Distributed Power Solutions in February 2026. |
+| Public buyers pay in stock at 11-12 times and win auctions | Panel estimate |
+| Dealer allocation does not transfer by contract | Panel reasoning |
+| The sponsor funds the deal but not the founder as chief executive | Offers commercial head with 5-8% |
+
+Capital panel estimates: acquisition closes within 12 months 15%. First paid compute delivery within 18 months 12%. $1bn of revenue within seven years 2%. Realistic ceiling: 300-600 MW, $150-350M of revenue, sold in four to six years for $1-2.5bn, founder's share $20-80M. Upper bound: 2 GW, $1bn of revenue, about $6bn of enterprise value.
+
+## Does any version still satisfy the original ambition?
+
+No. Ten versions of seven businesses were tested. None kept a path to $100bn of equity value after the panels' corrections. The highest ceilings the panels assigned were $13-20bn (power blocks at 10 GW a year, judged unreachable on capital) and about $6bn (onsite power at 2 GW).
