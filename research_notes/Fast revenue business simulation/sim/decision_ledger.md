@@ -135,3 +135,54 @@ A panel adviser ranked nine industries for the same play: freight forwarding wit
 |---|---|
 | F1 v3 | Firm-employed reviewers in secured rooms, price per accepted review, labs plus agent companies and enterprises. One fresh market panel. |
 | F7 v1 (new) | Buy a freight forwarder with a customs brokerage, automate entry work, sell duty recovery to its own importers. Two fresh panels. |
+
+## Round three results
+
+Panels were asked for the bar both ways: trailing twelve months, and annualized (latest quarter times four).
+
+| Candidate | First paid delivery in 9 months | $40M trailing by month 18 | $40M annualized at month 18 | $100M trailing by month 36 | $100M annualized at month 36 | Panels' central path | Outcome |
+|---|---|---|---|---|---|---|---|
+| F1 v3 Review by firm-employed teams | 82% | 4% | 8% | 5% | 6% | $10.9M trailing at month 18, $21M in year two, $34M in year three | Worse than v2. Firm supply dropped. |
+| F7 v1 Buy a freight forwarder with customs brokerage | 33-40% | 6-8% | 20-27% | 6-9% | 12-16% | $26M trailing at month 18, $85M at month 36, on $42M of capital | Hits the number most often. Rejected on value. |
+
+### F1 v3: review by firm-employed teams
+
+| Round-two objection | Status after v3 |
+|---|---|
+| Undifferentiated entry | Unresolved. A lab's security chief says employed staff in audited rooms removes a veto and does not earn primary status. An employed-team vendor already wins $20-29M programs. |
+| Reviewer count too low | Worse. Accounting firms deliver 26-30 weeks a year and none from January to April. One 400-person firm yields $1.0-1.7M. |
+| Buyers want price per accepted review | Resolved, but the firms refuse acceptance risk. The company buys hours on 12-week minimums and sells reviews on 30 days' notice. |
+| Concentration | Partly. Agent companies and software vendors buy $0.15-0.9M each. A bank or insurer refuses. |
+
+New objections: supplier firms take 75-80%, so gross margin is 15-22% in year one. The outsourcer supplies, then sells direct within a year. Model judges take 65-80% of review volume within 18 months.
+
+What the fresh buyers would order: a lab evaluation director takes a $250,000 trial at $420 a review, then $3.1-5.7M a year, and primary status at $7-11M only after two top-ranked quarters. A large technology company buys through an approved prime vendor: $0.4-1.0M in year one, $2-5M in year two.
+
+Conclusion on F1: version two is the better design. Keep individual experts paid weekly, offer price per accepted review where the buyer asks, and use firms only as overflow.
+
+### F7 v1: buy a freight forwarder. Rejected on value.
+
+| Objection | Evidence |
+|---|---|
+| Revenue is bought at a rate peak | A container rate index stood at $4,176 against $1,859 a year earlier and had fallen four weeks running (search summary). A 30% fall in rates cuts gross revenue about 21%. A "$45M" firm does $37-39M in its first year owned. |
+| A first closing takes 9-13 months | 5-8% inside six months, 18-20% inside nine, 35-40% inside twelve. Three to six firms of $40-60M sell each year with three to eight bidders each. |
+| Equity is short | $11-13M for a $45-48M firm, not $7-10M. The receivables line supplies about $2M. Carriers halve credit and the surety wants a personal indemnity on a change of owner. |
+| Automation belongs to the software vendor | Saving 3-6% of cost at month 18, 12-15% by month 30. Clients answer with fee cuts. |
+| Duty recovery on the book is small | $0.25-1.0M of fees in the first 18 months |
+| No value created | Delivery panel: equity of $11.5M at month 36 against $23.5M invested. Year five if it works: $40-55M of equity on $32-36M invested. |
+
+One seller would sell: the owner of a $45M forwarder at $15M, of which $12.75M in cash, staying 12-24 months. The licensed customs officer stays for pay, a bonus, 1.5% of the equity and control over agent filing.
+
+## Does any version meet the bar?
+
+No version was given better than about a one-in-four chance, and that only for F7 on the annualized reading. On trailing revenue the best was 8%.
+
+| Candidate, best version | $40M trailing by month 18 | $40M annualized at month 18 | Central trailing revenue at month 18 | Central year three | Value in year five if it works, against capital in |
+|---|---|---|---|---|---|
+| F7 Freight forwarder bought | 6-8% | 20-27% | $26M | $85M trailing at month 36 | $40-55M on $32-36M |
+| F1 v2 Expert review for AI labs | 5-7% | About 15% (the panel's high case) | $11-18M | $34-55M | $250-700M on $7-14M |
+| F5 Physical-work data | 4-6% | Not asked | $13.5M | $31M | $250-500M |
+| F4 Hospital recovery bought | 2-4% | 6% | $12.7M | $44M at month 36 | $200-290M on about $100M |
+| F6 Billing companies bought | 2-3% | Not asked | $17.6M | $60M at month 36 | $145-200M on $85-95M |
+| F2 Trucked gas | 2-4% | Not asked | $11M on the success path | $57M on the success path | $70-230M |
+| F3 Customs duty recovery | Under 1% | Not asked | $2.2M | $15M | $60-180M |
