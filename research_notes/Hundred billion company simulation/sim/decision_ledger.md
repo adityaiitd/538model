@@ -170,6 +170,22 @@ Tested by the retained capital panel and one fresh market panel.
 
 Capital panel estimates: acquisition closes within 12 months 15%. First paid compute delivery within 18 months 12%. $1bn of revenue within seven years 2%. Realistic ceiling: 300-600 MW, $150-350M of revenue, sold in four to six years for $1-2.5bn, founder's share $20-80M. Upper bound: 2 GW, $1bn of revenue, about $6bn of enterprise value.
 
+Fresh market panel (new sellers, buyers and competitors who had not seen earlier rounds):
+
+| Persona | Decision | Terms |
+|---|---|---|
+| Owner of a 100 MW rental fleet | Sells, but not to an unfunded searcher | $1.5-1.7M per MW for larger units, about 7 times EBITDA, $3-5M hard deposit plus an equity letter |
+| M&A banker | Admits the founder only with a named sponsor | Capable fleets go at 8-10 times. Financial buyers win about one auction in four |
+| Engine dealer | Sells without priority | 0-10 MW in 2027, 20-40 MW in 2028 |
+| Field operations veteran | 100 MW of rental nameplate gives 15-33 firm compute MW | Refit $0.6-0.9M per firm MW. Year-one availability 98.5-99.5% |
+| Hyperscaler | Refuses | Pays incumbents $32,000-38,000, 200 MW minimum |
+| Neocloud | Conditional contract with a $2-3M deposit | $48,000-52,000, five years plus three, 40-50 MW |
+| Colocation developer | Signs a 36-month bridge | $46,000-50,000, 40-60 MW |
+| Sovereign or enterprise project | Refuses | Needs references and a bond |
+| Public oilfield-power company | Outbids by 15-25% | $1.8-2.2M per MW |
+
+Market panel estimates: acquisition closes within 12 months 18%. First paid compute delivery within 18 months 12%. $1bn of revenue within seven years 3%. Value at 300 MW, 1 GW and 3 GW contracted: $0.35-0.5bn, $1.0-1.5bn and $3-4.5bn of equity. Realistic ceiling: sold at 300-600 MW for $0.8-1.5bn.
+
 ## Does any version still satisfy the original ambition?
 
 No. Ten versions of seven businesses were tested. None kept a path to $100bn of equity value after the panels' corrections. The highest ceilings the panels assigned were $13-20bn (power blocks at 10 GW a year, judged unreachable on capital) and about $6bn (onsite power at 2 GW).

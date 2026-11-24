@@ -38,7 +38,8 @@ SCENARIOS = {
 
 ACQ_MW = 100             # nameplate MW in the fleet bought in year 1
 FIRM_PER_NAMEPLATE = 0.75  # firm MW sold per nameplate MW once spare units are set aside
-CONVERT_PER_MW = 0.5     # $M per nameplate MW to fit rental units for data-center duty (panel: 0.4-0.6)
+CONVERTIBLE_FIRM = 30    # firm compute MW the acquired fleet can supply (market panel: 15-33 per 100 nameplate MW)
+CONVERT_PER_FIRM_MW = 0.75  # $M per firm MW to refit rental units for data-center duty (market panel: 0.6-0.9)
 RENTAL_PRICE_K = 34      # $000 per nameplate MW-month in the existing rental business (panel)
 RENTAL_UTIL = 0.80
 RENTAL_OPEX_K = 110      # per nameplate MW-year; gives about $240,000 EBITDA per MW-year (panel)
@@ -65,9 +66,9 @@ def run(p, shock=None):
         if y == 0:
             capex += ACQ_MW * p["acq_price_per_mw"]
         # the first compute megawatts come from converting acquired rental units
-        conv_target = min(mw, ACQ_MW * FIRM_PER_NAMEPLATE)
+        conv_target = min(mw, CONVERTIBLE_FIRM)
         new_conv = max(0.0, conv_target - converted)
-        capex += new_conv / FIRM_PER_NAMEPLATE * CONVERT_PER_MW
+        capex += new_conv * CONVERT_PER_FIRM_MW
         converted += new_conv
         build = max(0.0, mw - converted - built)
         capex += build * p["capex_per_mw"] * shock.get("capex_mult", 1.0)
