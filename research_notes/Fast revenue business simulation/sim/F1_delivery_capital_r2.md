@@ -142,14 +142,14 @@ Year-one average: 22 to 26% [calc].
 ### Persona 5. Skeptical venture investor
 
 - **Decision on the seed.** Refuses $5 to 8M at $30 to 40M post-money. Signs $4M at $16M pre-money, half at close and half on a first lab purchase order of at least $250K. Same price as round one. The data-owner condition is dropped.
-- **Decision on the later round.** Refuses until: $10M recognized in the trailing six months, two labs with neither above 55%, audited gross margin of 28% or more, and one program renewed twice.
+- **Decision on the later round.** Refuses until: $10M recognized in the trailing six months, two labs with neither above 55%, audited gross margin of 27% or more, and one program renewed twice.
 - **Reasons.**
   - v2 is cleaner to underwrite because the comparables exist. It is also, by the brief's own words, resold labor.
   - The precedents were first or early. micro1 lost 60% of its revenue overnight and Mercor's first year was mid-seven figures [notes; source]. An entrant in 2027 faces three suppliers above $1bn.
   - No researcher access and no exclusive supply. The finance background helps recruit dozens of senior reviewers, where the plan needs 750 to 1,000.
 - **Value.**
 
-| Gross revenue | Gross profit at 28 to 32% | Today's market: 3 to 10 times gross run-rate (AfterQuery at 3 times, leaders about 10 times) | Normal market: 2 to 4 times gross profit | Investor's working figure |
+| Gross revenue | Gross profit at 27 to 32% | Today's market: 3 to 10 times gross run-rate (AfterQuery at 3 times, leaders about 10 times) | Normal market: 2 to 4 times gross profit | Investor's working figure |
 |---|---|---|---|---|
 | $40M | $11 to 13M | $120M to $400M | $25M to $50M | $100M to $180M |
 | $100M | $28 to 32M | $300M to $1bn | $60M to $130M | $250M to $500M |
