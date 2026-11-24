@@ -17,29 +17,31 @@ SCENARIOS = {
     "Downside": dict(
         compute_mw=[30, 80, 150, 150, 150, 220, 280, 320, 350, 370],
         price_k=[42, 42, 38, 32, 30, 30, 30, 30, 30, 30],
-        capex_per_mw=2.6, acq_price_per_mw=2.3, opex_k=240,
-        debt_share=0.40, rate=0.12, ev_multiple=6.5, promote=0.10,
+        capex_per_mw=2.6, acq_price_per_mw=2.1, opex_k=240,
+        debt_share=0.40, rate=0.12, ev_multiple=6.5, stake=0.05,
     ),
     # Panel clearing prices, panel entrant costs, supply catches up from year 4.
     "Base": dict(
         compute_mw=[50, 140, 300, 550, 850, 1150, 1450, 1750, 2000, 2200],
         price_k=[46, 46, 46, 44, 42, 40, 39, 38, 38, 38],
-        capex_per_mw=2.1, acq_price_per_mw=2.0, opex_k=220,
-        debt_share=0.45, rate=0.10, ev_multiple=9.0, promote=0.12,
+        capex_per_mw=2.1, acq_price_per_mw=1.9, opex_k=220,
+        debt_share=0.45, rate=0.09, ev_multiple=10.0, stake=0.065,
     ),
     # Shortage persists, the company reaches incumbent-like cost and borrowing terms.
     "Upside": dict(
         compute_mw=[80, 250, 600, 1200, 2000, 3000, 4000, 5000, 6000, 7000],
         price_k=[48, 48, 48, 47, 46, 45, 44, 43, 42, 42],
-        capex_per_mw=1.75, acq_price_per_mw=1.8, opex_k=200,
-        debt_share=0.55, rate=0.085, ev_multiple=11.0, promote=0.15,
+        capex_per_mw=1.75, acq_price_per_mw=1.5, opex_k=200,
+        debt_share=0.55, rate=0.08, ev_multiple=12.0, stake=0.08,
     ),
 }
 
-ACQ_MW = 100             # sellable MW in the fleet bought in year 1
-OILFIELD_PRICE_K = 16    # $000 per MW-month on acquired units not yet moved to compute
-OILFIELD_UTIL = 0.75
-OILFIELD_OPEX_K = 110    # lighter duty than prime power
+ACQ_MW = 100             # nameplate MW in the fleet bought in year 1
+FIRM_PER_NAMEPLATE = 0.75  # firm MW sold per nameplate MW once spare units are set aside
+CONVERT_PER_MW = 0.5     # $M per nameplate MW to fit rental units for data-center duty (panel: 0.4-0.6)
+RENTAL_PRICE_K = 34      # $000 per nameplate MW-month in the existing rental business (panel)
+RENTAL_UTIL = 0.80
+RENTAL_OPEX_K = 110      # per nameplate MW-year; gives about $240,000 EBITDA per MW-year (panel)
 SGA_FIXED = 14.0         # $M a year
 SGA_VAR = 0.02           # share of revenue
 DEP_YEARS = 15
@@ -51,7 +53,9 @@ AVG_SITE_MW = 75
 
 def run(p, shock=None):
     shock = shock or {}
-    rows, net_debt, equity_in, invested, prev_mw, owned = [], 0.0, 0.0, 0.0, 0.0, 0.0
+    rows, net_debt, equity_in, invested, prev_mw = [], 0.0, 0.0, 0.0, 0.0
+    converted = built = owned = 0.0
+    prev_idle = float(ACQ_MW)
     for y in range(YEARS):
         mw = p["compute_mw"][y] * shock.get("mw_mult", 1.0)
         if y in shock.get("freeze", []):
@@ -60,15 +64,22 @@ def run(p, shock=None):
         capex = 0.0
         if y == 0:
             capex += ACQ_MW * p["acq_price_per_mw"]
-            owned = ACQ_MW
-        build = max(0.0, mw - owned)
+        # the first compute megawatts come from converting acquired rental units
+        conv_target = min(mw, ACQ_MW * FIRM_PER_NAMEPLATE)
+        new_conv = max(0.0, conv_target - converted)
+        capex += new_conv / FIRM_PER_NAMEPLATE * CONVERT_PER_MW
+        converted += new_conv
+        build = max(0.0, mw - converted - built)
         capex += build * p["capex_per_mw"] * shock.get("capex_mult", 1.0)
-        owned += build
-        idle = max(0.0, owned - mw)
+        built += build
+        owned = converted + built
+        idle_end = max(0.0, ACQ_MW - converted / FIRM_PER_NAMEPLATE)   # nameplate MW still in rental
+        idle = (idle_end + prev_idle) / 2
+        prev_idle = idle_end
         avg_mw = (mw + prev_mw) / 2
         rev = avg_mw * price * 12 / 1000 * (1 - shock.get("lost_share", 0.0))
-        rev += idle * OILFIELD_UTIL * OILFIELD_PRICE_K * 12 / 1000
-        opex = avg_mw * p["opex_k"] / 1000 + idle * OILFIELD_UTIL * OILFIELD_OPEX_K / 1000
+        rev += idle * RENTAL_UTIL * RENTAL_PRICE_K * 12 / 1000
+        opex = avg_mw * p["opex_k"] / 1000 + idle * RENTAL_UTIL * RENTAL_OPEX_K / 1000
         sga = SGA_FIXED + SGA_VAR * rev
         ebitda = rev - opex - sga - shock.get("one_off", {}).get(y, 0.0)
         invested += capex
@@ -87,14 +98,15 @@ def run(p, shock=None):
         net_debt += new_debt
         ev = max(ebitda, 0.0) * p["ev_multiple"]
         eq = max(ev - net_debt, 0.0)
-        gain = max(0.0, eq - equity_in)
+        scale = 1.0 if rev <= 100 else max(0.35, 1.0 - 0.4 * (__import__("math").log10(rev / 100)))
+        stake = p["stake"] * scale
         rows.append(dict(
             year=y + 1, mw=mw, sites=max(1, round(mw / AVG_SITE_MW)), price=price, rev=rev,
             ebitda=ebitda, ebit=ebit, capex=capex, invested=invested, net_debt=net_debt,
             equity_in=equity_in, eq=eq, moic=(eq / equity_in if equity_in else 0.0),
-            founder=p["promote"] * gain,
+            stake=stake, founder=stake * eq,
             roic=ebit * (1 - TAX) / invested if invested else 0.0,
-            staff=round(STAFF_HQ + owned * STAFF_PER_MW),
+            staff=round(STAFF_HQ + (owned + idle * FIRM_PER_NAMEPLATE) * STAFF_PER_MW),
         ))
         prev_mw = mw
     return rows
@@ -103,15 +115,15 @@ def run(p, shock=None):
 def table(rows):
     head = ("| Year | MW sold | Sites | Price $000/MW-month | Revenue | EBITDA | EBITDA margin | Operating margin | "
             "Capex | Capital invested | Net debt | Equity paid in | Staff | ROIC | Equity value | "
-            "Value / equity paid in | Founder promote value |")
-    out = [head, "|" + "---|" * 17]
+            "Value / equity paid in | Founder stake | Founder value |")
+    out = [head, "|" + "---|" * 18]
     for r in rows:
         m = r["ebitda"] / r["rev"] if r["rev"] else 0
         e = r["ebit"] / r["rev"] if r["rev"] else 0
         out.append(
             f"| {r['year']} | {r['mw']:,.0f} | {r['sites']} | {r['price']:.0f} | {r['rev']:,.0f} | {r['ebitda']:,.0f} | "
             f"{m:.0%} | {e:.0%} | {r['capex']:,.0f} | {r['invested']:,.0f} | {r['net_debt']:,.0f} | "
-            f"{r['equity_in']:,.0f} | {r['staff']:,} | {r['roic']:.1%} | {r['eq']:,.0f} | {r['moic']:.1f}x | {r['founder']:,.0f} |")
+            f"{r['equity_in']:,.0f} | {r['staff']:,} | {r['roic']:.1%} | {r['eq']:,.0f} | {r['moic']:.1f}x | {r['stake']:.1%} | {r['founder']:,.0f} |")
     return "\n".join(out)
 
 
@@ -124,12 +136,12 @@ def main():
     print("| Input | Downside | Base | Upside |\n|---|---|---|---|")
     labels = [("capex_per_mw", "New-build cost per MW sold, $M"), ("acq_price_per_mw", "Purchase price of acquired fleet per MW, $M"),
               ("opex_k", "Operating cost per MW-year, $000"), ("debt_share", "Debt share of capital spending"),
-              ("rate", "Interest rate"), ("ev_multiple", "Enterprise value / EBITDA"), ("promote", "Founder share of gains above equity paid in")]
+              ("rate", "Interest rate"), ("ev_multiple", "Enterprise value / EBITDA"), ("stake", "Founder stake at entry (falls as equity is raised)")]
     for k, lab in labels:
         vals = [SCENARIOS[s][k] for s in ("Downside", "Base", "Upside")]
-        fmt = (lambda v: f"{v:.0%}") if k in ("debt_share", "promote") else ((lambda v: f"{v:.1%}") if k == "rate" else (lambda v: f"{v:g}"))
+        fmt = (lambda v: f"{v:.0%}") if k == "debt_share" else ((lambda v: f"{v:.1%}") if k in ("rate", "stake") else (lambda v: f"{v:g}"))
         print(f"| {lab} | " + " | ".join(fmt(v) for v in vals) + " |")
-    print(f"| Fleet acquired in year 1, MW | {ACQ_MW} | {ACQ_MW} | {ACQ_MW} |")
+    print(f"| Fleet acquired in year 1, nameplate MW | {ACQ_MW} | {ACQ_MW} | {ACQ_MW} |")
     print()
     for name, p in SCENARIOS.items():
         print(f"## {name} case\n")
